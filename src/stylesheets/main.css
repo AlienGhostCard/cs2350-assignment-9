@@ -1,3 +1,31 @@
 /* Your styles go here */
 @import url("bootstrap/dist/css/bootstrap.min.css");
 @import url("bootstrap-icons/font/bootstrap-icons.css");
+
+.title{
+    text-align: center;
+    font-size: 4rem;
+}
+
+.rtitle{
+    display: inline;
+    font-size: 2rem;
+}
+
+.tname{
+    display: inline;
+    float: left;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+}
+
+.names{
+    display: inline;
+    float: left;
+    border-bottom: 1px solid rgb(223, 223, 223);
+}
+
+/* make it so that every first and second but not third or fourth names element is a different color */
+.names:nth-child(4n), .names:nth-child(4n-1) {
+    background-color: rgb(223, 223, 223);
+}
